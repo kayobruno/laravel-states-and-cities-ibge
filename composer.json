@@ -1,0 +1,17 @@
+{
+    "name": "kayo/states-and-cities-ibge",
+    "description": "Um pacote Laravel que cria e atualiza todos os estados e cidades do Brasil a partir de uma integração com a API do IBGE",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kayo Bruno",
+            "email": "kayodw@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Kayo\\StatesAndCitiesIbge\\": "./src/"
+        }
+    }
+}
