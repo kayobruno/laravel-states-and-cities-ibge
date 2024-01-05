@@ -103,7 +103,7 @@ class ImportStatesAndCitiesCommand extends Command
         $states = State::all();
         foreach ($states as $state) {
             $this->info("Importando as cidades do estado: {$state->name}");
-            $this->newLine();
+            //$this->newLine();
 
             $totalCreated = $totalUpdated = 0;
             $cities = $this->ibgeService->getCitiesByState($state->ibge_id);
@@ -137,7 +137,7 @@ class ImportStatesAndCitiesCommand extends Command
             ];
 
             $this->info("Todas as cidades do estado {$state->name} foram importadas com sucesso");
-            $this->newLine();
+            //$this->newLine();
         }
 
         $tableHeader = ['Estado', 'Total de Cidades Cadastradas', 'Total de Cidades Atualizadas'];
